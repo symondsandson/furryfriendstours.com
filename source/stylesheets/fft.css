@@ -1,0 +1,115 @@
+/* ********************************************************
+                         Base
+******************************************************** */
+
+body { background: #d9a985 url('../images/background.jpg') repeat left top; line-height: 1.125em; font: 12pt normal Georgia, "Times New Roman", Times, serif; }
+h1, h2, h3, .h1, .h2, .h3, a { line-height: 1em; letter-spacing: -0.02em; }
+h1, .h1 { margin: 0.15em 0; font-size: 1.75em; }
+h2, .h2 { margin: 0.25em 0; font-size: 1.25em; }
+h3, .h3 { margin: 0.5em 0; font-size: 1.10em; }
+b, strong, .b, .strong { font-weight: bold; }
+em, i, .em, .i { font-style: italic; }
+p {margin: 3px 0; font-size: 1.1em;}
+.left {float: left;}
+.right {float: right;}
+a {color: #8d2c40;}
+a:visited {color: #511924;}
+
+/* ********************************************************
+                       Container
+******************************************************** */
+
+#container { width: 830px; margin: 0px auto; }
+
+/* ********************************************************
+                        Spacers
+******************************************************** */
+.thinspacer { width: 700px; height: 13px; margin: 5px 0 25px 37px; display: block; float: left;}
+.spacer { width: 340px; height: 66px; margin: 5px auto 5px auto; display: block; clear: both;}
+.smallspacer, .smallspacer-floating { width: 600px; height: 28px; margin: 5px auto 10px auto; display: block;}
+.smallspacer-floating {float: left; margin-left: 83px;}
+
+/* ********************************************************
+                        Navbar
+******************************************************** */
+
+#titlebar ul { font-size: 1.1em; font-weight: bold; margin: 10px 0 10px 20px;}
+#titlebar li { display: inline; margin-left: 3.6%; height: 20px;}
+
+#navbar { position: relative; margin-top: -80px; float: left; background: url('../images/navbar.png') no-repeat right top; width: 100%;}
+#navbar #logo {float: left;  }
+#navbar ul { float: left; font-size: 1.1em; font-weight: bold; margin: 10px 0 0 80px;}
+#navbar li { display: inline; margin-left: 15px; height: 20px;}
+
+/* ********************************************************
+                        Forms
+******************************************************** */
+
+.defaultActive { color: #a1a1a1; font-style: italic; }
+form.form {float: left; width: 100%; clear: both;}
+form.form label {float: left; width: 120px; clear: left; text-align: right; padding-right: 10px; margin: 7px 0;}
+form.form input, form.form textarea {float: left; width: 300px; clear: right; margin: 3px 0; font-size: 1.05em;}
+form.form input[type='submit'] {float: left; margin-left: 130px; width: 302px;}
+
+/* ********************************************************
+                        Flash
+******************************************************** */
+
+.flash { width: 700px; margin: 0 0 10px 35px; padding: 10px; font-size: 1.1em; text-align: center; border: 1px solid black;
+         float: left; clear: both; }
+.flash.error { color: red; border-color: red;}
+.flash.notice { color: blue; border-color: blue; }
+
+/* ********************************************************
+                       Content
+******************************************************** */
+
+#container #content { margin: 50px 0 20px 0; padding: 0px 25px; background: url('../images/box/middle.png') repeat-y left top; }
+#content #top, #content #bottom { background-repeat: no-repeat; background-position: left top; height: 60px; position: relative; width: 830px; }
+#content #top { background-image: url('../images/box/top.png'); top: -38px; left: -25px; }
+#content #bottom { background-image: url('../images/box/bottom.png'); bottom: -38px; left: -25px; }
+
+#content img.header { margin-bottom: 10px;}
+#content .images { clear: both; float: left; position: relative; height: 230px; width: 860px;}
+#content .images img {position: relative; clear: none; float: left; }
+#content .images #postcard { top: -175px; left: -90px; width: 551px; height: 412px;  }
+#content .images #vacations { top: -70px; left: -85px; width: 300px; height: 250px; }
+
+#content #footer { font-size: 0.85em; font-style: italic; float: left; position: relative; width: 100%; font-size: 0.85em; bottom: -10px;}
+#content #footer #copyright { float: left; }
+#content #footer ul { float: right; margin-right: 10px;}
+#content #footer li { display: inline; margin-left: 5px; }
+
+#content .tour {width: 100%; float: left; clear: both; margin-bottom: 15px;}
+#content .tour .pics {float: right;}
+#content .tour p {margin-left: 20px;}
+#content .tour ul {list-style: circle outside none; margin-left: 40px;}
+#content .tour li {display: inline; float: left; margin-bottom: 3px; width: 300px;}
+#content .tour .link {margin: 5px 0 0 20px; float: left;}
+
+#content table {width: 100%;}
+#content table td {padding: 4px; line-height: 1.1em; vertical-align: top;}
+#content table th {padding: 4px;}
+#content table th.left-border {border-left: 1px dotted #827871;}
+#content table tr {border-bottom: 1px dotted #827871;}
+#content table tr.header {border-bottom: 1px solid black;}
+#content table tr.header th {padding-bottom: 3px;}
+#content table tr.additional {font-style: italic; font-size: 0.9em; background-color: #827871; color: white;}
+#content table tr.additional a {color: white; text-decoration: none;}
+#content table tr.total {text-align: left; border-top: 3px solid black; background-color: white;}
+#content .fieldWithErrors input, #content .fieldWithErrors textarea {border: 1px solid red;}
+
+#content span.required {float: right; clear: both; font-size: 0.9em; font-style: italic; margin-top: 3px;}
+
+#content ol {list-style-type: decimal; margin-left: 30px;}
+#content ol li {margin-bottom: 5px;}
+
+#content .right-checkout {float: right; width: 100%; margin-top: 20px; text-align: right;}
+
+#content .address {width: 500px; margin: 10px auto; padding: 10px; border: 1px dotted #827871; text-align: center;}
+
+#content .left {width: 500px; float: left; margin-right: 10px; padding-right: 10px; border-right: 1px dotted #827871;}
+#content .right {width: 200px; float: left; }
+#content .right .title {color: #511924; font-size: 1.1em; margin: 10px 0 3px 0; font-weight: bold;}
+
+#content .photos img {padding: 5px; background-color: #bbada2; margin: 5px 15px;}
